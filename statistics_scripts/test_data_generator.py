@@ -61,7 +61,7 @@ def wordnormal():
             Basically, each 32-bit word will be randomly generated with
             the middle bits being more likely than the outter bits.
 
-        TODO: This is super slow. There's probably a more efficient way to do it
+        NOTE: This is super slow. There's probably a more efficient way to do it
     """
     with open("test_data/wordnormal.bin", "wb") as file:
 

@@ -4,7 +4,6 @@
 # https://webhome.phy.duke.edu/~rgb/General/dieharder.php
 tests="0 2 3 4 5 6 7 8 9 10 11 12 13 15 16 17 100 101 102 200 201 202 203 204"
 # File with random bits. Raw binary
-# needs to be at least TODO MB big
 filename=$1
 
 if [ -z "$filename" ]
