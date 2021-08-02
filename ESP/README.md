@@ -1,6 +1,11 @@
-## Results
+## ESP32
 
-### ESP32
+### Results
+
+Overall, good. As long as you spinloop all calls to the RNG.
+
+The few "weak" results from Dieharder were not consistent across multiple runs, so they appear to be an expected statistical outlier.
+
 ```
 dieharder -g 201 -a -f Huzzah32randData0.bin
 ```

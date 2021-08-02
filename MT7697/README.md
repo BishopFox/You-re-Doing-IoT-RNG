@@ -1,6 +1,6 @@
-# MediaTek 7697
+## MediaTek 7697
 
-# Results
+### Results
 
 Histogram of how often each byte occurs. Bytes 0 -> 255 on the X axis.
 

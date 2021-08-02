@@ -1,6 +1,11 @@
 ## LPC54628
 
 ### Results
+
+Overall, good. As long as you follow the quirks listed below and spinloop on your RNG calls.
+
+The few "weak" results from Dieharder were not consistent across multiple runs, so they appear to be an expected statistical outlier.
+
 ```
 dieharder -g 201 -a -f LPC54628randData.bin0.bin
 ```
@@ -238,3 +243,5 @@ Number of 128 bit words Entropy
 
 To constitute one 128 bit number, a 32 bit random number is read, then the next 32 numbers are read but not used. The next 32 bit number is read and used and so on. Thus 32 32-bit random numbers are skipped between two 32-bit numbers that are used.
 ```
+
+Failing to do this lead to extremely vulnerable results.
